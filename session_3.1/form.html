@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Board</title>
+</head>
+<body>
+    <h1>Add Task to Board</h1>
+    <form action="http://example.com/add-task" method="POST">
+        <!-- Task Description -->
+        <label for="task_description">Task Description:</label>
+        <br>
+        <textarea id="task_description" name="task_description" rows="4" cols="50" required></textarea>
+        <br><br>
+
+        <!-- Priority -->
+        <label for="priority">Priority:</label>
+        <select id="priority" name="priority">
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+        </select>
+        <br><br>
+
+        <!-- Due Date -->
+        <label for="due_date">Due Date:</label>
+        <input type="date" id="due_date" name="due_date">
+        <br><br>
+
+        <!-- Submit Button -->
+        <input type="submit" value="Add Task">
+    </form>
+</body>
+</html>
